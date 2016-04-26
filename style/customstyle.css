@@ -1,3 +1,31 @@
-.header {
-	height:100px;s
+.snoopybanner {
+	height:100px;
+	background-image:url("snoopynavbaricon.jpg");    
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+
+.separating_line {
+    border-top: 1px #ddd solid; /* top border only */
+}
+
+img {
+    
+}
+
+.precious_text {
+	float:left;
+	text-align: center;
+}
+
+#kids {
+	float: right;
+    margin: 0 0 10px 10px;
+}
+
+#outside {
+	float: left;
+    margin: 0 0 10px 10px;
+    height:40%;
+    width:40%;
 }

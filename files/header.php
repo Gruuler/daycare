@@ -13,8 +13,10 @@
 			</div>
 			
 			<div class="col-md-8">
-				<p>Snoopy Daycare Service</p><br>
-				<div>
+				
+				<div class="snoopybanner">
+				</div>
+				<div class="tabs">
 					<ul class="nav nav-tabs">
 					<?php
 						$pages = array("Main" => "index.php","Services" => "services.php","About Us"=>"about.php");
