@@ -67,7 +67,7 @@
 			<div class="separating_line">
 			</div>
 
-			<div>
+			<div class="outdoor">
 				<h2>Outdoor Play</h2>
 				<img src="style/outdoors.jpg" alt="Kids" id="outside"><br>
 				<p>
@@ -76,6 +76,7 @@
 					There is plenty of space to encourage children to use their imaginations though dancing, playing, and crafts.
 				</p>
 			</div><br><br><br><br>
+
 			<div class="copyright">
 				<p>Copyright 2016</p>
 			</div>
