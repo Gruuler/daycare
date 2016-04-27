@@ -6,46 +6,68 @@
 		$title ="Services";
 	?>
 
+	
+
+</head>
+
+<body>
+
 	<script type="text/javascript">
 
+	var $ = function(x) {
+  		return document.getElementById(x);
+	}
+
 	var checkForm = function(){
-		var submitForm = true;
+		var submitForm = false;
 		var name = $("name").value;
 		var email = $("email").value;
 		var phone = $("phone").value;
 
 
 		if($("name").value.length<1) {
-		    
 			submitForm = false;
-
 		}else if($("email").value.length < 1) {
-
 			submitForm = false;
-		  
 		}else if($("phone").value.length < 1){
-
 			submitForm = false;
-
 		}
 
 		if(submitForm) {
 			$("responseForm").submit();
+  		}else{
+  			var temp = createDiv();
+  			$("userWarning").innerHTML = temp;
+
   		}
+	}
+
+	var createDiv = function(pId,name,description,price,picture) {
+	  var div = document.createElement("div");
+	  div.setAttribute("id","product"+pId);
+	  div.setAttribute("class","product");
+
+	  var image = document.createElement("label");
+	  image.setAttribute("for",name);
+	  image.innerHTML = "<img src='images/"+picture+"' height='50' width='40'>";
+	  div.appendChild(image);
+
+	  var text = document.createElement("p");
+	  text.setAttribute("id","pname");
+	  text.innerHTML = name;
+	  div.appendChild(text);
+
+	  button.appendChild(buy);
+
+	  div.appendChild(button);
+
+	  return div;
 	}
 
 	window.onload=function(){
 		$("buttonSubmit").onclick = checkForm;
 	}
-
-	var $ = function(x) {
-  		return document.getElementById(x);
-	}
-
 	</script>
-</head>
-
-<body>
 
 	<?php
 		include 'files/header.php';
@@ -124,11 +146,12 @@
 					</div>
 					<div class="form-group"> 
 				    <div class="col-sm-offset-2 col-sm-10">
-				      <button type="submit" class="btn btn-default" id="buttonSubmit">Submit</button>
+				      <button type="submit" value="Submit" id="buttonSubmit" class="btn btn-default">Submit</button>
 				    </div>
 
 				    <?php //code for alert ?>
-				    <div class="alert">
+				    <div class="userWarning">
+				    	
 				    </div>
 
 				</form>	
