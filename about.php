@@ -29,13 +29,16 @@
 			Our team speaks both English and Spanish and works hard to create a learning program that benefits all the children.</p>
 
 		</div>
-		Location:
-
-		123 Sesame Street
-		Alphabet City, NY 99999 
-
-		1(800)TEA-CHME
-
+		<p>
+			Location:
+		</p>	
+		<p>
+			123 Sesame Street
+			Alphabet City, NY 99999 
+		</p>
+		<p>
+			1(800)TEA-CHME
+		</p>
 		Snoopykid@daycare.com
 	</div>
 	<div class="col-md-2">
