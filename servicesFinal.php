@@ -30,7 +30,7 @@
 				}else{
 					echo "<div class='alert alert-warning'>";
 					echo "<a href='#'' class='close' data-dismiss='alert-warning' aria-label='close'>&times;</a>";
-					echo "<strong>Warning!</strong> Something went wrong.  Please re-enter your information in the form below.";
+					echo "<strong>Warning!</strong> Your information was not submitted.  Please be sure to fill out all fields in the form.";
 					echo "</div>";
 				}
 			}
